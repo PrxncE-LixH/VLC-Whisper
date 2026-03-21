@@ -2,6 +2,11 @@
 
 This repository contains modifications to VLC Media Player 3.0.21, integrating OpenAI's Whisper model for automatic subtitle generation.
 
+## Credits and Acknowledgments
+- VLC Media Player by [VideoLAN](https://www.videolan.org/vlc/)
+- Whisper model by [OpenAI](https://openai.com/research/whisper)
+- Whisper.cpp by [Georgi Gerganov](https://github.com/ggerganov/whisper.cpp)
+
 ## Features
 
 - **Automatic Subtitle Generation**: Generate subtitles for any video
@@ -112,13 +117,9 @@ Original VLC Media Player: https://www.videolan.org/vlc/
 Whisper.cpp: https://github.com/ggerganov/whisper.cpp
 
 
-## Credits and  Acknowledgments
-
-- VLC Media Player by VideoLAN
-- Whisper model by OpenAI
-- Whisper.cpp by Georgi Gerganov
-
 ## Authors
 [VLC media player](https://github.com/videolan/vlc)
+
+[OpenAI](https://openai.com/research/whisper)
 
 [Whisper.cpp](https://github.com/ggerganov/whisper.cpp)
