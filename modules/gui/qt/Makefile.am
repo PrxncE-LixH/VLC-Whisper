@@ -12,10 +12,17 @@
 SUFFIXES += .ui .h .hpp .moc.cpp
 
 libqt_plugin_la_CPPFLAGS = $(AM_CPPFLAGS) \
-	-I$(srcdir)/gui/qt -I$(builddir)/gui/qt
+	-I$(srcdir)/gui/qt -I$(builddir)/gui/qt \
+	-I$(top_srcdir)/dependencies/whisper
+
 libqt_plugin_la_CXXFLAGS = $(AM_CXXFLAGS) $(QT_CFLAGS) $(CXXFLAGS_qt)
-libqt_plugin_la_LIBADD = $(QT_LIBS) $(LIBS_qt) $(LIBM)
-libqt_plugin_la_LDFLAGS = $(AM_LDFLAGS) -rpath '$(guidir)'
+
+libqt_plugin_la_LIBADD = $(QT_LIBS) $(LIBS_qt) $(LIBM) \
+	-L$(top_srcdir)/dependencies/whisper -lwhisper
+
+libqt_plugin_la_LDFLAGS = $(AM_LDFLAGS) -rpath '$(guidir)' \
+	-Wl,-rpath,'$(abs_top_srcdir)/dependencies/whisper'
+
 if HAVE_DARWIN
 libqt_plugin_la_LDFLAGS += -Wl,-framework,Cocoa
 endif

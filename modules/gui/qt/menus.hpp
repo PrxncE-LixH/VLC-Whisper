@@ -30,6 +30,8 @@
 #include <QObject>
 #include <QMenu>
 #include <QVector>
+#include "dependencies/whisper/whisper.h" 
+
 
 class MenuItemData : public QObject
 {
@@ -156,6 +158,25 @@ private:
     static QMenu *recentsMenu, *audioDeviceMenu;
 
     static void updateAudioDevice( intf_thread_t *, audio_output_t *, QMenu* );
+
+    /* Generate subtile  */
+
+    static void extractAudio(const QString& tempPath, input_item_t *item);
+
+    static QVector<float> loadPcmAudio(const QString& path);
+
+    static QString seconds_to_srt_timestamp(float seconds);
+
+    static void generate_srt_file(whisper_context* ctx, const QString& output_filename);
+    
+    static void transcribe_audio_to_srt(const QString& audio_file_path, const QString& srt_output_path);
+
+    static void generateSubtitle(const QString& tempPath, const QString& srtOutputPath, intf_thread_t* p_intf,  QAction* generateAction);
+
+    static void loadSubtitle(const QString& srtFilePath, intf_thread_t* p_intf);
+
+    static QString getModelPath();
+
 
 public slots:
     static void updateRecents( intf_thread_t * );

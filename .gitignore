@@ -53,3 +53,11 @@ build*
 contrib-*
 install-*
 
+dependencies/ffmpeg/ffmpeg
+dependencies/ffmpeg/ffprobe
+dependencies/ffmpeg/qt-faststart
+dependencies/whisper/models/*.bin
+dependencies/whisper/*so.1
+dependencies/whisper/*so.1.7.5
+dependencies/whisper/*.a
+dependencies/windows-whisper/*
