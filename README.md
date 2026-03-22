@@ -36,7 +36,7 @@ select "Generate Subtitle"
         ↓
 Extract audio with FFmpeg 
         ↓
-Load Whisper model (tiny.en)
+Load Whisper model (ggml-tiny.en.bin)
         ↓
 Run inference with latency tracking
         ↓
@@ -56,8 +56,10 @@ The implementation includes comprehensive latency tracking:
 ## Quick Start
 
 - Download ffmpeg and place in dependencies/ffmpeg
-- Build whisper for Ubuntu/Linux and place in dependencies/whisper
+- Build whisper for Ubuntu/Linux and place .so and .a files in dependencies/whisper
+  - expects libwhisper.a, libwhisper.so,  libwhisper.so.1, libwhisper.so.1.7.5  
 - Download whisper model and place in dependencies/models
+  - refer to https://github.com/ggml-org/whisper.cpp/blob/master/models/README.md
 
 ## Build Instructions
 
