@@ -55,11 +55,11 @@ The implementation includes comprehensive latency tracking:
 
 ## Quick Start
 
-- Download ffmpeg and place in dependencies/ffmpeg
+- Download ffmpeg and place in **dependencies/ffmpeg/**
   - expects ffmpeg, ffprobe, qt-faststart
-- Build whisper for Ubuntu/Linux and place .so and .a files in dependencies/whisper
+- Build whisper for Ubuntu/Linux and place .so and .a files in **dependencies/whisper/**
   - expects libwhisper.a, libwhisper.so,  libwhisper.so.1, libwhisper.so.1.7.5  
-- Download whisper model and place in dependencies//whisper/models/
+- Download whisper model and place in **dependencies/whisper/models/**
   - refer to https://github.com/ggml-org/whisper.cpp/blob/master/models/README.md
 
 ## Build Instructions
