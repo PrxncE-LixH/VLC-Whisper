@@ -76,9 +76,9 @@ Be sure to handle required libraries/dependencies for a successful build.
 Before building, ensure the `dependencies/` folder is in place at the root 
 of the build directory:
 ```
-dependencies
-  - ffmpeg               # static ffmpeg binary for audio extraction
-  - whisper              # Whisper tiny.en model and header files
+dependencies/
+  - ffmpeg/              # static ffmpeg binary for audio extraction
+  - whisper/              # Whisper tiny.en model and header files
 ```
 
 The Makefile expects these paths at build time.
