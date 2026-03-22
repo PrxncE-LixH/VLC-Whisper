@@ -15,7 +15,7 @@ This repository contains modifications to VLC Media Player 3.0.21, integrating O
 
 ## Video Demo
 
-[![Video Demo](assets/screenshot.png)](https://youtu.be/FQDohM-yUWk)
+[![Video Demo](assets/screenshot.png)](https://youtu.be/C6h30NUFdAc)
 
 ## Performance Metrics
 
