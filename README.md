@@ -103,7 +103,7 @@ The Makefile expects these paths at build time.
 
 Enable verbose logging to see metrics:
 ```bash
-./vlc -vvv --intf qt
+./vlc -vvv
 ```
 
 ## Limitations
