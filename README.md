@@ -10,16 +10,14 @@ This repository contains modifications to VLC Media Player 3.0.21, integrating O
 ## Features
 
 - **Automatic Subtitle Generation**: Generate subtitles for any video
-- **Real-time Processing**: Track inference latency and performance metrics
 - **Multi-language Support**: Leverage Whisper's multilingual capabilities
 
 ## Video Demo
 
 [![Video Demo](assets/screenshot.png)](https://youtu.be/C6h30NUFdAc)
 
-## Performance Metrics
+## Setup
 
-- Real-Time Factor: ~0.5 (processes 1 min of audio in 30 sec on average hardware)
 - Model: Whisper Tiny English
 - Platform: Ubuntu x86_64
 
