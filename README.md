@@ -18,7 +18,7 @@ This repository contains modifications to VLC Media Player 3.0.21, integrating O
 
 ## Setup
 
-- Model: Whisper Tiny English
+- Model: Whisper Tiny English. `change for additional language support`
 - Platform: Ubuntu x86_64
 
 ## Prerequisites
@@ -26,7 +26,6 @@ This repository contains modifications to VLC Media Player 3.0.21, integrating O
 - Ubuntu 20.04+ or similar Linux distribution
 - Whisper.cpp library (instructions below)
 - VLC 3.0.21 build dependencies
-
 
 ## Architecture
 ```
